@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2b8f2ff5105eeeca82283821f1e7b4b6 {
+                    position: relative;
+                    width: 700.0px;
+                    height: 500.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2b8f2ff5105eeeca82283821f1e7b4b6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2b8f2ff5105eeeca82283821f1e7b4b6 = L.map(
+                "map_2b8f2ff5105eeeca82283821f1e7b4b6",
+                {
+                    center: [0, 0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 1,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1fa66af3a7836b3d1b365bca1d41c98d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2b8f2ff5105eeeca82283821f1e7b4b6);
+        
+    
+            map_2b8f2ff5105eeeca82283821f1e7b4b6.fitBounds(
+                [[30.292566364273743, 119.42380805243009], [30.349345053164754, 119.4565879721853]],
+                {}
+            );
+        
+    
+            var feature_group_506d740a2d9d780b1652a5d8b388af38 = L.featureGroup(
+                {}
+            ).addTo(map_2b8f2ff5105eeeca82283821f1e7b4b6);
+        
+    
+            var marker_ab6e09ca12769a7b6f1f5a37e82394f4 = L.marker(
+                [30.34200546316607, 119.4335706184773],
+                {}
+            ).addTo(feature_group_506d740a2d9d780b1652a5d8b388af38);
+        
+    
+        var popup_c2685757a871fc6d68df707eb25fd12b = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_4eee2e7b23c7f66c3067e981b129a9dc = $(`<div id="html_4eee2e7b23c7f66c3067e981b129a9dc" style="width: 100.0%; height: 100.0%;"><h4>开山老殿</h4>                <h6>正式寺名叫狮子正宗禅寺，始建于元朝至元十六年（公元1275年）。</h6>                <img src=https://EcnuGISChaser.github.io/gis_development/photo/开山老殿_thumbnail.png></div>`)[0];
+                popup_c2685757a871fc6d68df707eb25fd12b.setContent(html_4eee2e7b23c7f66c3067e981b129a9dc);
+            
+        
+
+        marker_ab6e09ca12769a7b6f1f5a37e82394f4.bindPopup(popup_c2685757a871fc6d68df707eb25fd12b)
+        ;
+
+        
+    
+    
+            var marker_d695d0d6d7d7ef6e3c3319e6b69f81a7 = L.marker(
+                [30.338603129376626, 119.43188513872198],
+                {}
+            ).addTo(feature_group_506d740a2d9d780b1652a5d8b388af38);
+        
+    
+        var popup_d55aed40e82e4d0ca635a371e74da927 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_8541a86730ebd88929fc986f48824954 = $(`<div id="html_8541a86730ebd88929fc986f48824954" style="width: 100.0%; height: 100.0%;"><h4>七里亭</h4>                <h6>七里亭也称眠牛亭，附近有眠牛石。</h6>                <img src=https://EcnuGISChaser.github.io/gis_development/photo/七里亭_thumbnail.png></div>`)[0];
+                popup_d55aed40e82e4d0ca635a371e74da927.setContent(html_8541a86730ebd88929fc986f48824954);
+            
+        
+
+        marker_d695d0d6d7d7ef6e3c3319e6b69f81a7.bindPopup(popup_d55aed40e82e4d0ca635a371e74da927)
+        ;
+
+        
+    
+    
+            var marker_186472bb4603ef90a2df9ef5f8cf08c9 = L.marker(
+                [30.336792402584074, 119.43448820451303],
+                {}
+            ).addTo(feature_group_506d740a2d9d780b1652a5d8b388af38);
+        
+    
+        var popup_53c1a091740bd6ce4f918ab8d288b40b = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_0663c00bb6fe03d27da5a779892de0f3 = $(`<div id="html_0663c00bb6fe03d27da5a779892de0f3" style="width: 100.0%; height: 100.0%;"><h4>五里亭</h4>                <h6>五里亭也称如斯亭，取孔子《论语》中“逝者如斯乎”之意。</h6>                <img src=https://EcnuGISChaser.github.io/gis_development/photo/五里亭_thumbnail.png></div>`)[0];
+                popup_53c1a091740bd6ce4f918ab8d288b40b.setContent(html_0663c00bb6fe03d27da5a779892de0f3);
+            
+        
+
+        marker_186472bb4603ef90a2df9ef5f8cf08c9.bindPopup(popup_53c1a091740bd6ce4f918ab8d288b40b)
+        ;
+
+        
+    
+    
+            var marker_b78ea8f7cc3cfdb7bc9219895490b461 = L.marker(
+                [30.334296304956073, 119.4364299092431],
+                {}
+            ).addTo(feature_group_506d740a2d9d780b1652a5d8b388af38);
+        
+    
+        var popup_a3f01f0809c773bef4002ca5e3d79ca6 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_f77129e0d998e5cef7da9e32733c4966 = $(`<div id="html_f77129e0d998e5cef7da9e32733c4966" style="width: 100.0%; height: 100.0%;"><h4>三里亭</h4>                <h6>三里亭也称依翠亭。</h6>                <img src=https://EcnuGISChaser.github.io/gis_development/photo/三里亭_thumbnail.png></div>`)[0];
+                popup_a3f01f0809c773bef4002ca5e3d79ca6.setContent(html_f77129e0d998e5cef7da9e32733c4966);
+            
+        
+
+        marker_b78ea8f7cc3cfdb7bc9219895490b461.bindPopup(popup_a3f01f0809c773bef4002ca5e3d79ca6)
+        ;
+
+        
+    
+    
+            var marker_c8b34aa8b186a5c2f4c5f81d2678c66e = L.marker(
+                [30.329573074859507, 119.43904731634954],
+                {}
+            ).addTo(feature_group_506d740a2d9d780b1652a5d8b388af38);
+        
+    
+        var popup_84e4b3dce41a878a7d37db9c7a41d9fd = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_3f7790aa4ad8b7543e5a982a24d45c6a = $(`<div id="html_3f7790aa4ad8b7543e5a982a24d45c6a" style="width: 100.0%; height: 100.0%;"><h4>一里亭</h4>                <h6>一里亭也称仰止亭。</h6>                <img src=https://EcnuGISChaser.github.io/gis_development/photo/一里亭_thumbnail.png></div>`)[0];
+                popup_84e4b3dce41a878a7d37db9c7a41d9fd.setContent(html_3f7790aa4ad8b7543e5a982a24d45c6a);
+            
+        
+
+        marker_c8b34aa8b186a5c2f4c5f81d2678c66e.bindPopup(popup_84e4b3dce41a878a7d37db9c7a41d9fd)
+        ;
+
+        
+    
+    
+            var marker_19f8a5a2bab6e88d150ad75bec5b2c8f = L.marker(
+                [30.323704943983515, 119.4424798059373],
+                {}
+            ).addTo(feature_group_506d740a2d9d780b1652a5d8b388af38);
+        
+    
+        var popup_c376220d7054f21697c7dc90c1cffd76 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_47799143178e42cb314d55b9053a6b20 = $(`<div id="html_47799143178e42cb314d55b9053a6b20" style="width: 100.0%; height: 100.0%;"><h4>禅源寺</h4>                <h6>位于天目山南麓昭明、旭日两峰之下，是韦驮菩萨应迹道场。</h6>                <img src=https://EcnuGISChaser.github.io/gis_development/photo/禅源寺_thumbnail.png></div>`)[0];
+                popup_c376220d7054f21697c7dc90c1cffd76.setContent(html_47799143178e42cb314d55b9053a6b20);
+            
+        
+
+        marker_19f8a5a2bab6e88d150ad75bec5b2c8f.bindPopup(popup_c376220d7054f21697c7dc90c1cffd76)
+        ;
+
+        
+    
+    
+            var marker_69d0d03a78fee8a91949b22de3ec5639 = L.marker(
+                [30.32424997662812, 119.43929346124573],
+                {}
+            ).addTo(feature_group_506d740a2d9d780b1652a5d8b388af38);
+        
+    
+        var popup_36d8aeda9ad20fc98b39919363002135 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_59e7b2aebcfc7f919f59d9af028c1c79 = $(`<div id="html_59e7b2aebcfc7f919f59d9af028c1c79" style="width: 100.0%; height: 100.0%;"><h4>太子庵</h4>                <h6>梁代昭明太子萧统读书的地方。</h6>                <img src=https://EcnuGISChaser.github.io/gis_development/photo/太子庵_thumbnail.png></div>`)[0];
+                popup_36d8aeda9ad20fc98b39919363002135.setContent(html_59e7b2aebcfc7f919f59d9af028c1c79);
+            
+        
+
+        marker_69d0d03a78fee8a91949b22de3ec5639.bindPopup(popup_36d8aeda9ad20fc98b39919363002135)
+        ;
+
+        
+    
+    
+            var marker_82563eb7b6a62d6ac8c3716e2d847bd1 = L.marker(
+                [30.3277070584395, 119.4510308116128],
+                {}
+            ).addTo(feature_group_506d740a2d9d780b1652a5d8b388af38);
+        
+    
+        var popup_a6cf3759f5f832eaaa2eba8514c41bea = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_c05b3655da1d9ad44c34cae3fb8c1387 = $(`<div id="html_c05b3655da1d9ad44c34cae3fb8c1387" style="width: 100.0%; height: 100.0%;"><h4>红庙</h4>                <h6>红庙为天目山最古老的土地庙。</h6>                <img src=https://EcnuGISChaser.github.io/gis_development/photo/红庙_thumbnail.png></div>`)[0];
+                popup_a6cf3759f5f832eaaa2eba8514c41bea.setContent(html_c05b3655da1d9ad44c34cae3fb8c1387);
+            
+        
+
+        marker_82563eb7b6a62d6ac8c3716e2d847bd1.bindPopup(popup_a6cf3759f5f832eaaa2eba8514c41bea)
+        ;
+
+        
+    
+    
+            var marker_c8f079cec20a4671da63481528f94307 = L.marker(
+                [30.31589847796083, 119.44290468242684],
+                {}
+            ).addTo(feature_group_506d740a2d9d780b1652a5d8b388af38);
+        
+    
+        var popup_d34a1ec74f49ff03eb22619a21df4dfd = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_a3cce4c85dd6661028704e04e3008a3a = $(`<div id="html_a3cce4c85dd6661028704e04e3008a3a" style="width: 100.0%; height: 100.0%;"><h4>旅游服务中心</h4>                <h6>景区班车停车场。</h6>                <img src=https://EcnuGISChaser.github.io/gis_development/photo/旅游服务中心_thumbnail.png></div>`)[0];
+                popup_d34a1ec74f49ff03eb22619a21df4dfd.setContent(html_a3cce4c85dd6661028704e04e3008a3a);
+            
+        
+
+        marker_c8f079cec20a4671da63481528f94307.bindPopup(popup_d34a1ec74f49ff03eb22619a21df4dfd)
+        ;
+
+        
+    
+    
+            var marker_8a950441c1c42c9485e0ce0fccdb56c9 = L.marker(
+                [30.349345053164754, 119.42380805243009],
+                {}
+            ).addTo(feature_group_506d740a2d9d780b1652a5d8b388af38);
+        
+    
+        var popup_90c4f83f2c6795e9e30c7acdc17a99d4 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_a7cb8bfe9ffff67220ed22aaabd1ea5f = $(`<div id="html_a7cb8bfe9ffff67220ed22aaabd1ea5f" style="width: 100.0%; height: 100.0%;"><h4>仙人顶</h4>                <h6>仙人顶为天目山主峰，海拔1506米。</h6>                <img src=https://EcnuGISChaser.github.io/gis_development/photo/仙人顶_thumbnail.png></div>`)[0];
+                popup_90c4f83f2c6795e9e30c7acdc17a99d4.setContent(html_a7cb8bfe9ffff67220ed22aaabd1ea5f);
+            
+        
+
+        marker_8a950441c1c42c9485e0ce0fccdb56c9.bindPopup(popup_90c4f83f2c6795e9e30c7acdc17a99d4)
+        ;
+
+        
+    
+    
+            var marker_6abf422a6179f85f97d3045e77962f73 = L.marker(
+                [30.31149447148016, 119.44450658613646],
+                {}
+            ).addTo(feature_group_506d740a2d9d780b1652a5d8b388af38);
+        
+    
+        var popup_b4c1baf31e6942f59d9e5acac3de4116 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_65ec63841dd1cb005eea27fff9723f90 = $(`<div id="html_65ec63841dd1cb005eea27fff9723f90" style="width: 100.0%; height: 100.0%;"><h4>蔷薇花园</h4>                <h6>实习住宿酒店。</h6>                <img src=https://EcnuGISChaser.github.io/gis_development/photo/蔷薇花园_thumbnail.png></div>`)[0];
+                popup_b4c1baf31e6942f59d9e5acac3de4116.setContent(html_65ec63841dd1cb005eea27fff9723f90);
+            
+        
+
+        marker_6abf422a6179f85f97d3045e77962f73.bindPopup(popup_b4c1baf31e6942f59d9e5acac3de4116)
+        ;
+
+        
+    
+    
+            var marker_785c888af05c35f82b4934dd2839b058 = L.marker(
+                [30.292566364273743, 119.45075682590212],
+                {}
+            ).addTo(feature_group_506d740a2d9d780b1652a5d8b388af38);
+        
+    
+        var popup_1df9d8e2cd74b44a7d15f619abf564db = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_64448e71e221daa4a9b48fb8b324792d = $(`<div id="html_64448e71e221daa4a9b48fb8b324792d" style="width: 100.0%; height: 100.0%;"><h4>天目村</h4>                <h6>以前叫大有村，植被实习点（象鼻山）。</h6>                <img src=https://EcnuGISChaser.github.io/gis_development/photo/天目村_thumbnail.png></div>`)[0];
+                popup_1df9d8e2cd74b44a7d15f619abf564db.setContent(html_64448e71e221daa4a9b48fb8b324792d);
+            
+        
+
+        marker_785c888af05c35f82b4934dd2839b058.bindPopup(popup_1df9d8e2cd74b44a7d15f619abf564db)
+        ;
+
+        
+    
+    
+            var marker_898920fc13ecac3443dd343fc54d866a = L.marker(
+                [30.324851080887697, 119.4565879721853],
+                {}
+            ).addTo(feature_group_506d740a2d9d780b1652a5d8b388af38);
+        
+    
+        var popup_06f8368ed2061898f94d4f118710ac73 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_94eaea604d46316c22a6d2a7c013f853 = $(`<div id="html_94eaea604d46316c22a6d2a7c013f853" style="width: 100.0%; height: 100.0%;"><h4>下朱陀岭水库</h4>                <h6>位于九狮村，地质岩层观测点。</h6>                <img src=https://EcnuGISChaser.github.io/gis_development/photo/下朱陀岭水库_thumbnail.png></div>`)[0];
+                popup_06f8368ed2061898f94d4f118710ac73.setContent(html_94eaea604d46316c22a6d2a7c013f853);
+            
+        
+
+        marker_898920fc13ecac3443dd343fc54d866a.bindPopup(popup_06f8368ed2061898f94d4f118710ac73)
+        ;
+
+        
+    
+    
+            var tile_layer_c129dd45d9c60c119ca82f4aef667157 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_ca8c0adf3080986f889935aa4e83583c = new L.Control.MiniMap(
+                tile_layer_c129dd45d9c60c119ca82f4aef667157,
+                {"autoToggleDisplay": false, "centerFixed": false, "collapsedHeight": 25, "collapsedWidth": 25, "height": 150, "minimized": false, "position": "bottomright", "toggleDisplay": true, "width": 150, "zoomAnimation": false, "zoomLevelOffset": -5}
+            );
+            map_2b8f2ff5105eeeca82283821f1e7b4b6.addControl(mini_map_ca8c0adf3080986f889935aa4e83583c);
+        
+    
+            var tile_layer_0722ba377448921b3232b2d1d11060c2 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "arcgisonline", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2b8f2ff5105eeeca82283821f1e7b4b6);
+        
+    
+            var layer_control_b50ee4f93853606b671245b8a68c9c0e = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_1fa66af3a7836b3d1b365bca1d41c98d,
+                    "ArcGIS online\u5168\u7403\u5f71\u50cf" : tile_layer_0722ba377448921b3232b2d1d11060c2,
+                },
+                overlays :  {
+                    "POI" : feature_group_506d740a2d9d780b1652a5d8b388af38,
+                },
+            };
+            L.control.layers(
+                layer_control_b50ee4f93853606b671245b8a68c9c0e.base_layers,
+                layer_control_b50ee4f93853606b671245b8a68c9c0e.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_2b8f2ff5105eeeca82283821f1e7b4b6);
+            tile_layer_0722ba377448921b3232b2d1d11060c2.remove();
+        
+</script>
+</html>
